@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="mat.css">
+    <title>Document</title>
+    <style>
+    html,body{
+        margin: 0px;
+        padding: 0px;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    
+    .main1,.main2{
+        width: 100%;
+        height: 100vh;
+       
+        position: relative;
+
+    }
+    /* .nav{
+        width: 100%;
+        height: 10%;
+        border: 2px solid black;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    } */
+    .nav2{
+        width: 100%;
+        height: 5%;
+       
+        position: absolute;
+        top: 5%;
+        left: 0%;
+    }
+    .nav1{
+        width: 100%;
+        height: 5%;
+       border-bottom:0.5px solid aliceblue;
+        position: absolute;
+        display: flex;
+        top: 0%;
+        left: 0%;
+    }
+    .image
+        {
+            width: 100%;
+            height: 100%;
+            background-image: url('image/4.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .overlay
+        {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(58, 59, 71, 0.8);
+            position: absolute;
+            top: 0%;
+            
+        }
+
+        .logo{
+        width: 15%;
+        height: 100%;
+        
+        position: absolute;
+        color:white;
+        
+        font-size: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+      
+        
+    }
+    .logo_txt{
+        width: 15%;
+        height: 100%;
+        position: absolute;
+        left: 15%;
+       
+        color: WHITE;
+        font-size: 25px;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        
+
+    }
+    .menu{
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        left: 30%;
+        
+        color: WHITE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .menu1,.menu2,.menu3,.menu4,.menu5,.menu6{
+        width: 8%;
+        height: 100%;
+        display: flex;
+        justify-content: left ;
+        align-items: center;
+    }
+    a{
+       text-decoration: none;
+       color: WHITE;
+       alink="blue";
+       display: inline;
+       
+   }
+   a:hover{
+       color:   blue;
+   }
+    .nav11{
+        width: 9%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end ;
+        align-items: center;
+        color: WHITE;
+        position: absolute;
+        left: 14%;
+       
+    }
+    .nav12{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        color: WHITE;
+        position: absolute;
+        left: 24%;
+    }
+    .content1{
+        width: 20%;
+        height: 10%;
+        
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 15px;
+        color: aliceblue;
+        
+    }
+    @font-face
+        {
+            src: url('text/JosefinSans-Regular.ttf');
+            font-family: js;
+        }
+    .content2{
+        width: 30%;
+        height: 10%;
+       
+        position: absolute;
+        top: 46%;
+        left: 35%;
+        font-size: 40px;
+       
+        color: aliceblue;
+    
+    }
+    .content3{
+        width: 40%;
+        height: 10%;
+       
+        position: absolute;
+        top: 53%;
+        left: 30%;
+        font-size: 15px;
+        color: aliceblue;
+       }
+       .txt1,.txt2,.txt3{
+           width: 20%;
+           height: 30%;
+        
+           border-radius: 5%;
+           background: rgb(249, 250, 255)
+       }
+       .txt1{
+           position: absolute;
+           top: 10%;
+           left: 15%;
+           
+       }
+       .txt2{
+           position: absolute;
+           top: 10%;
+           left: 40%;
+       }
+       .txt3{
+           position: absolute;
+           top: 10%;
+           left: 65%;
+       }
+       .icon{
+        width: 100%;
+        height: 30%;
+        
+        color: rgb(136, 310, 3);
+           font-size: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .icon-txt{
+        width: 100%;
+        height: 10%;
+        
+        color: rgb(136, 310, 3);
+           font-size: 20px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .icon-txt1{
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        right: 10%;
+        color: black;
+           font-size: 15px;
+       }
+       .txt4,.txt5{
+        width: 40%;
+           height: 40%;
+      
+       
+       }
+       .txt4{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        font-size: 30px;
+        padding: 2%;
+       }
+       .txt5{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size:20px;
+        padding: 1%;
+       }
+       .btn{
+           height: 4%;
+           width: 10%;
+           position: absolute;
+           top: 60%;
+           left: 44%;
+            border-radius: 10%;
+           background: rgb(136, 310, 3);
+           color: white;
+       }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="image"></div>
+        <div class="overlay"></div>
+            
+            <div class="nav1">
+                <div class="nav11"><a href="#">VIEW US</a></div>
+                <div class="nav12"><a href="#">BUY TICKET</a></div>
+            </div>
+             <div class="nav2">
+            <div class="logo"><i class="fab fa-accusoft"></i></div>
+            <div class="logo_txt">MESEUM</div>
+            <div class="menu">
+                <div class="menu1"><a href="#" >HOME</a></div>
+                <div class="menu2"><a href="#">ABOUT</a></div>
+                <div class="menu3"><a href="#">GALLERY</a></div>
+                <div class="menu4"><a href="#">EVENTS</a></div>
+                <div class="menu5"><a href="#">TICKETS</a></div>
+                <div class="menu6"><a href="#">BLOG</a></div>
+            </div>
+        </div>
+        <div class="content1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque dignissimos minus</div>
+        <div class="content2">Exhibition On Modern Era</div>
+        <div class="content3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum explicabo autem, odio nobis impedit reprehenderit Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            voluptatum eos incidunt </div>
+        <button class="btn">GET STARTED</button>
+        
+    </div>
+    <div class="main2">
+        <div class="txt1">
+            <div class="icon"> <i class="far fa-clock"></i></div>
+             <div class="icon-txt">Opening Hours</div> 
+             <div class="icon-txt1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,illum aut,  </div> 
+               
+                
+        </div>
+        <div class="txt2">
+                <div class="icon"> <i class="fas fa-rocket"></i></div>
+                <div class="icon-txt">Ongoing Exhibhition</div> 
+                <div class="icon-txt1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,illum aut,  </div> 
+        </div>
+        <div class="txt3">
+                <div class="icon"> <i class="fas fa-briefcase"></i></div>
+                <div class="icon-txt">Opening Events</div> 
+                <div class="icon-txt1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,illum aut,  </div> 
+        </div>
+        <div class="txt4"><b>Lorem</b> lorem  ipsum dolor sit amet consectetur adipisicing elit.<b>Lorem</b> Possimus natus, error<b>Lorem</b>s ipsam soluta vero!</div>
+        <div class="txt5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt officiis dolorem, odio necessitatibus nemo natus repellat. Velit consequuntur minus quo rerum aliquam voluptatem explicabo, qui veniam unde. Pariatur, in dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum earum, est quod beatae atque et temporibus officiis voluptatem dolore aperiam, a cum reiciendis ad, aut amet adipisci cumque distinctio.</div>
+    </div>
+</body>
+</html>

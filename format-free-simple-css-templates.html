@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="mat.css">
+    <style>
+    html,body{
+        margin: 0px;
+        padding: 0px;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .main{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        background: url('image/13.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat,
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        opacity: 0.9;
+        background: #f857a6;
+        background: -webkit-linear-gradient(to right, #f857a6, #ff5858); 
+        background: linear-gradient(to right, #f857a6, #ff5858); 
+        
+      
+        
+    }
+    .head{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 40px;
+        color: white;
+        width: 40%;
+    }
+    .hed{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: 40%;
+        color: white;
+    }
+    .main1{
+        width: 100%;
+        height: 100vh;
+        border: 2px solid white;
+        position: relative;
+    }
+    .img1,.img2,.img3{
+        position: absolute;
+        top: 0px;
+        width: 34%;
+        height: 50%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img4,.img5.img6{
+        position: absolute;
+       top: 50%;
+      
+        width: 34%;
+        height: 50%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img1{
+        
+        background: url('image/2.jpeg');
+
+    }
+    .img2{
+        background: url('image/3.jpeg');
+        left: 33%;
+    }
+    .img3{
+        background: url('image/4.jpeg');
+        left: 66%
+    }
+    .img4{
+        background: url('image/5.jpeg');
+       
+    }
+    .img5{
+        background: url('image/6.jpeg');
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        width: 34%;
+        height: 50%;
+        
+
+    }
+    .img6{
+        background: url('image/7.jpeg');
+       
+        width: 34%;
+        height: 50%;
+        left: 66%;
+        position: absolute;
+        top: 50%;
+    }
+    .nav{
+        position: absolute;
+        width: 100%;
+        height: 10%;
+      
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav1{
+        width: 50%;
+        height: 100%;
+        font-size: 30PX;
+        color: white;
+        position: absolute;
+        left: 100px;
+        top: 5px;
+        }
+    
+    @font-face {
+            
+            src: url('text/Oswald-Light.ttf');
+          
+            font-family: db;
+        }
+    @font-face{
+            src: url('text/Merriweather-Bold.ttf');
+            font-family: jb;
+        }
+    .menu{
+        width: 50%;
+        height: 100%;
+        top: 0px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+       
+    
+    }
+    .menu1,.menu2,.menu3,.menu4,.menu5,.menu6,.menu7,.menu8{
+        width: 18%;
+        height: 100%;
+        color: white;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        text-decoration: none;
+        display: inline;
+        color: white;
+        font-size: 18px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="image"></div>
+        <div class="overlay"></div>
+        <nav class=" container white z-depth-0" style="width:100%">
+            <div class="nav-wrapper white-text ">
+              <a href="#" class="brand-logo" class="white-text"><span class="white-text"> Uni</span><span class="blue-text">cat</span></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#" class="white-text">Home</a></li>
+                <li><a href="#" class="white-text">Service</a></li>
+                <li><a href="#"class="white-text">Works</a></li>
+                <li><a href="#"class="white-text">About</a></li>
+                <li><a href="#"class="white-text">Team</a></li>
+                <li><a href="#"class="white-text">Counter</a></li>
+                <li><a href="#"class="white-text">Contact</a></li>
+                <li>
+                    <div class="icon">
+                            <i class="fas fa-search"></i>
+                    </div>                        
+              </ul>
+            </div>
+          </nav>
+        <div class="head">We're creative agency based in London and New York</div>
+        <div class="hed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam esse enim quibusdam hic reiciendis ipsam numquam, pariatur, veniam, totam dicta repudiandae ut ea vitae! Illo rem laborum laboriosam harum nisi!</div>
+    </div>
+    <div class="main1">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+        <div class="img6"></div>
+    </div>
+</body>
+</html>
